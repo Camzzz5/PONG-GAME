@@ -6,6 +6,7 @@ class Ball(Turtle):
         self.ball_creation()
         self.x_move = 10
         self.y_move = 10
+        self.move_speed = 0.1
         
     def ball_creation(self):
         self.shape("circle")
@@ -25,6 +26,7 @@ class Ball(Turtle):
         self.x_move *=-1
         self.goto(0, 0)
         self.ball_movement()
+        self.move_speed = 0.1
                 
     
         
